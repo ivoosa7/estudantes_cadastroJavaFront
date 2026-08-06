@@ -34,6 +34,6 @@ public class CourseController {
         return courses.stream()
                     .filter(course -> course.getId() == id)
                     .findFirst()
-                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Curso não encontrado")); //Retorna 404 se o curso não for encontrado e lança uma exceção com a mensagem "Curso não encontrado"
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Curso não encontrado!")); //Retorna 404 se o curso não for encontrado e lança uma exceção com a mensagem "Curso não encontrado"
     }
 }
