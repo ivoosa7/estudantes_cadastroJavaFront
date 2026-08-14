@@ -6,14 +6,16 @@ public class Course {
     private String name;
 
     //Construtor
+    public Course() {
+
+    }
+
     public Course(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Course() {
-    }
-
+ 
     //Getters e Setters
     public int getId() {
         return id;

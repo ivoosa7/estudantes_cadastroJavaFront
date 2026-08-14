@@ -6,23 +6,25 @@ public class Student {
     private String name;
     private String email;
     private String phone;
-    private int idCurso;
+    private boolean newStudent;
+    private Course course;
     private int period;
     
     //Construtor
-    public Student(int id, String name, String email, String phone, int idCurso, int period) {
+    public Student() {
+    }
+
+    public Student(int id, String name, String email, String phone, boolean newStudent, Course course, int period) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.idCurso = idCurso;
+        this.newStudent = newStudent;
+        this.course = course;
         this.period = period;
     }
 
     //Getters e Setters
-    public Student() {
-    }
-
     public int getId() {
         return id;
     }
@@ -55,12 +57,20 @@ public class Student {
         this.phone = phone;
     }
 
-    public int getIdCurso() {
-        return idCurso;
+    public boolean isNewStudent() {
+        return newStudent;
     }
 
-    public void setIdCurso(int idCurso) {
-        this.idCurso = idCurso;
+    public void setNewStudent(boolean newStudent) {
+        this.newStudent = newStudent;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public int getPeriod() {
@@ -69,5 +79,6 @@ public class Student {
 
     public void setPeriod(int period) {
         this.period = period;
-    }   
+    }
+    
 }
