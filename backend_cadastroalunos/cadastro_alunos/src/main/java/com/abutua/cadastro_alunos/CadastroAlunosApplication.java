@@ -10,4 +10,6 @@ public class CadastroAlunosApplication {
 		SpringApplication.run(CadastroAlunosApplication.class, args);
 	}
 
+	
+
 }
